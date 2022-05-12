@@ -28,11 +28,20 @@ function generateGrid() {
   gridContainer.forEach(appendRows); 
 }
 
-const squares = document.querySelectorAll('.grid-squares');
-
+// Adds an event listener to each square and changes its color when event 'hover' triggered
+function changeSquareColor() {
+  squares.forEach((square) => {
+    square.addEventListener('mouseover', function(event) {
+      event.target.classList.add('grid-square-hover');
+    });
+  });
+};
 
 
 //-------Program-------------------------------------------------------------
 
 generateGrid();
 
+// creates nodelist of all squares to use in 'changeSquareColor()'
+const squares = document.querySelectorAll('.grid-squares');
+changeSquareColor();
