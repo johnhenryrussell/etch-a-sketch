@@ -7,7 +7,7 @@
 .grid-row-container {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 0px;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -15,11 +15,10 @@
 .grid-column-container {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0px;
   margin-top: 64px;
 }
 
 .grid-square-hover {
   background-color: brown;
 }
-
